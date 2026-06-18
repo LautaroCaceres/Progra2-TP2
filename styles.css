@@ -190,3 +190,138 @@ body {
   background-color: #3B3B3B;
   color: var(--color-white);
 }
+
+
+/* =====================
+   SCORES BAR
+   ===================== */
+
+.scores-bar {
+  width: 100%;
+  background-color: #2A2A2A;
+  overflow: hidden;
+  padding: 0 var(--grid-margin-desktop);
+}
+
+.scores-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 16px 0;
+}
+
+.scores-track::-webkit-scrollbar {
+  display: none;
+}
+
+.score-card {
+  flex-shrink: 0;
+  width: 239px;
+  height: 132px;
+  background-color: #505050;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--color-white);
+  position: relative;
+}
+
+.score-card--tenis {
+  width: 343px;
+}
+
+.score-card--no-result {
+  height: auto;
+}
+
+.score-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-card__live {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.score-card__when {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-white);
+}
+
+.score-card__time {
+  font-family: var(--font-main);
+  font-size: 14px;
+  color: #AAAAAA;
+  margin-left: auto;
+  padding-right: 0;
+}
+
+.score-card__teams {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-card__team {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.score-card__name {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  flex: 1;
+}
+
+.score-card__score {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: #CCCCCC;
+  position: absolute;
+  right: 16px;
+}
+
+/* Tenis */
+.score-card__sets {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.score-card__sets span {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: #CCCCCC;
+}
+
+.score-card__sets span.winner {
+  color: var(--color-red);
+}
+
+a.score-card {
+  text-decoration: none;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+a.score-card:hover {
+  opacity: 0.85;
+}
