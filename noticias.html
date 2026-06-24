@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - Noticias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link">En vivo</a>
+        <a href="calendario.html" class="navbar__link">Calendario</a>
+        <a href="noticias.html" class="navbar__link navbar__link--active">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sports-grid" id="sportsGrid">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <button class="sports-toggle" id="sportsToggle" aria-label="Mostrar deportes">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </button>
+
+  <div class="sports-grid sports-grid--floating" id="sportsGridFloating">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <main class="noticias-page">
+
+    <h2 class="section-title">Noticias</h2>
+
+    <div class="filters-bar">
+      <button class="filter-btn" data-filter="deportes">
+        Deportes
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="filter-btn" data-filter="competicion">
+        Competición
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="filter-btn" data-filter="instancia">
+        Instancia
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- Grupo NBA -->
+    <section class="sport-group">
+      <div class="sport-group__header">
+        <img src="assets/menu/nba.png" alt="" width="45" height="45">
+        <h2 class="section-title">NBA</h2>
+      </div>
+      <div class="news-carousel">
+        <div class="news-carousel__track">
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/nba1.png" alt="">
+            <p class="news-carousel__text">Kevin Durant cerca del retiro luego de los playoffs</p>
+          </a>
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/nba2.png" alt="">
+            <p class="news-carousel__text">New York Knicks campeones de la NBA 2026</p>
+          </a>
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/nba3.png" alt="">
+            <p class="news-carousel__text">¿Regresa Lebron luego de una mala temporada en Lakers?</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grupo Fútbol -->
+    <section class="sport-group">
+      <div class="sport-group__header">
+        <img src="assets/menu/futbol.png" alt="" width="45" height="45">
+        <h2 class="section-title">Fútbol</h2>
+      </div>
+      <div class="news-carousel">
+        <div class="news-carousel__track">
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/futbol1.png" alt="">
+            <p class="news-carousel__text">Ander Herrera decide dar un paso al costado y retirarse de Boca</p>
+          </a>
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/futbol2.png" alt="">
+            <p class="news-carousel__text">El campeón del mundo vuelve al fútbol argentino</p>
+          </a>
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/futbol3.png" alt="">
+            <p class="news-carousel__text">Sampaoli nuevo entrenador de Talleres de Córdoba</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grupo NFL -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/nfl.png" alt="" width="45" height="45">
+    <h2 class="section-title">NFL</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/nfl1.png" alt="">
+        <p class="news-carousel__text">Fernando Mendoza deja buenas impresiones en Raiders</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/nfl2.png" alt="">
+        <p class="news-carousel__text">Seahawks recibe el anillo de campeones del Super Bowl</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/nfl3.png" alt="">
+        <p class="news-carousel__text">Brendan Sorsby planea ir al draft suplementario de la NFL</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Grupo Fórmula 1 -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/formula1.png" alt="" width="45" height="45">
+    <h2 class="section-title">Fórmula 1</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/f1-1.png" alt="">
+        <p class="news-carousel__text">Ferrari prepara un salto en la potencia de sus monoplazas para el próximo GP</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/f1-2.png" alt="">
+        <p class="news-carousel__text">McLaren apela ante la FIA por devolverle el podio a Gasly en Mónaco</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/f1-3.png" alt="">
+        <p class="news-carousel__text">Puntos para Alpine en Barcelona de la mano de Gasly y Colapinto</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Grupo Tenis -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/tenis.png" alt="" width="45" height="45">
+    <h2 class="section-title">Tenis</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/tenis1.png" alt="">
+        <p class="news-carousel__text">Jack Sinner #1 del mundo participará del Winbledon 2026</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/tenis2.png" alt="">
+        <p class="news-carousel__text">Wawrinka participará en su último torneo de tenis profesional, Winbledon 2026</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/tenis3.png" alt="">
+        <p class="news-carousel__text">Sabalenka en crisis ¿Se retira de tenis profesional?</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Grupo MotoGP -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/motogp.png" alt="" width="45" height="45">
+    <h2 class="section-title">MotoGP</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/motogp1.png" alt="">
+        <p class="news-carousel__text">Marc Marquez campeón de MotoGP luego de 6 años</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/motogp2.png" alt="">
+        <p class="news-carousel__text">El Argentino Valentin Perrone logra su primera Pole Position</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/motogp3.png" alt="">
+        <p class="news-carousel__text">El GP de Hungría, para el olvido, tuvo varios accidentes</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Grupo Golf -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/golf.png" alt="" width="45" height="45">
+    <h2 class="section-title">Golf</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/golf1.png" alt="">
+        <p class="news-carousel__text">Joaquín Niemann logró su primer título del año</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/golf2.png" alt="">
+        <p class="news-carousel__text">El inolvidable Charles Schwab Challenge que consagró a Emiliano Grillo</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/golf3.png" alt="">
+        <p class="news-carousel__text">The CJ Cup Byron Nelson 2026: todo lo que tenés que saber</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/golf4.png" alt="">
+        <p class="news-carousel__text">Aaron Rai: de la humildad a la cima del golf mundial con sus dos guantes</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Grupo Polo -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/polo.png" alt="" width="45" height="45">
+    <h2 class="section-title">Polo</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/polo1.png" alt="">
+        <p class="news-carousel__text">Indios Chapaleufú es el nuevo campeón del Abierto de Pilar Chico</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/polo2.png" alt="">
+        <p class="news-carousel__text">Castagnola: "Siempre me gustó tomar mis decisiones y decir lo que pienso"</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/polo3.png" alt="">
+        <p class="news-carousel__text">Torneo Intercolegial: la victoria fue para Los Robles Amarillo</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/polo4.png" alt="">
+        <p class="news-carousel__text">La increíble vida de Eduardo Gordo Moore, el hombre que cambió la historia del polo</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Grupo Hockey -->
+<section class="sport-group">
+  <div class="sport-group__header">
+    <img src="assets/menu/hockey.png" alt="" width="45" height="45">
+    <h2 class="section-title">Hockey</h2>
+  </div>
+  <div class="news-carousel">
+    <div class="news-carousel__track">
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/hockey1.png" alt="">
+        <p class="news-carousel__text">CUBA y el secreto que late debajo del escudo: el pacto de las doce jugadoras</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/hockey2.png" alt="">
+        <p class="news-carousel__text">A 10 años de Río 2016, cómo fue el camino de Los Leones al oro</p>
+      </a>
+      <a href="#" class="news-carousel__item">
+        <img src="assets/noticias-page/hockey3.png" alt="">
+        <p class="news-carousel__text">Copa Buenos Aires Campeonato caballeros 2026: fixture y resultados</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - Tenis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link">En vivo</a>
+        <a href="calendario.html" class="navbar__link">Calendario</a>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra secundaria de deporte: fija, reemplaza al sports-grid -->
+  <nav class="sport-navbar">
+    <div class="sport-navbar__sport">
+      <img src="assets/menu/tenis.png" alt="" width="36" height="36">
+      <span>Tenis</span>
+    </div>
+    <div class="sport-navbar__links">
+      <a href="tenis.html" class="sport-navbar__link sport-navbar__link--active">Portada</a>
+      <a href="tenis-resultados.html" class="sport-navbar__link">Resultados</a>
+      <a href="tenis-calendario.html" class="sport-navbar__link">Calendario</a>
+      <a href="tenis-ranking.html" class="sport-navbar__link">Ranking</a>
+      <a href="tenis-jugadores.html" class="sport-navbar__link">Jugadores</a>
+      <a href="tenis-grand-slam.html" class="sport-navbar__link">Ganadores de Gran Slam</a>
+    </div>
+  </nav>
+
+  <main class="sport-page">
+
+  <div class="scores-bar scores-bar--sport">
+    <div class="scores-track">
+
+      <a href="#" class="score-card score-card--tenis">
+        <div class="score-card__header">
+          <span class="score-card__live">EN VIVO</span>
+          <span class="score-card__time">3er set</span>
+        </div>
+        <div class="score-card__teams">
+          <div class="score-card__team">
+            <img src="assets/banderas/alemania.png" alt="" width="24" height="24">
+            <span class="score-card__name">Jan-Lennard Struff</span>
+            <div class="score-card__sets">
+              <span class="winner">6</span>
+              <span class="winner">6</span>
+              <span>2</span>
+            </div>
+          </div>
+          <div class="score-card__team">
+            <img src="assets/banderas/kazajistan.png" alt="" width="24" height="24">
+            <span class="score-card__name">Alexander Bublik</span>
+            <div class="score-card__sets">
+              <span>7</span>
+              <span>3</span>
+              <span class="winner">6</span>
+            </div>
+          </div>
+        </div>
+        <span class="score-card__league" style="background-color: var(--color-tenis);">ATP</span>
+      </a>
+
+    </div>
+  </div>
+
+  <section class="vs-hero">
+    <h2 class="section-title">Final ATP500 Queen's</h2>
+    <img src="assets/tenis/vs-queens.png" alt="Final ATP500 Queen's" class="vs-hero__img">
+  </section>
+
+  <section class="players-section">
+    <h2 class="section-title">Jugadores</h2>
+    <div class="players-carousel">
+      <div class="players-carousel__track">
+        <a href="#" class="player-card">
+          <img src="assets/tenis/jugador1.png" alt="">
+          <span class="player-card__name">Jannik Sinner</span>
+        </a>
+        <a href="#" class="player-card">
+          <img src="assets/tenis/jugador2.png" alt="">
+          <span class="player-card__name">Alex de Miñaur</span>
+        </a>
+        <a href="#" class="player-card">
+          <img src="assets/tenis/jugador3.png" alt="">
+          <span class="player-card__name">Alejandro Fokina</span>
+        </a>
+        <a href="#" class="player-card">
+          <img src="assets/tenis/jugador4.png" alt="">
+          <span class="player-card__name">Francisco Cerúndolo</span>
+        </a>
+        <a href="#" class="player-card">
+          <img src="assets/tenis/jugador5.png" alt="">
+          <span class="player-card__name">Tommy Paul</span>
+        </a>
+        <a href="#" class="player-card">
+          <img src="assets/tenis/jugador6.png" alt="">
+          <span class="player-card__name">Jakub Mensik</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="resumen-section">
+    <h2 class="section-title">Resumen</h2>
+    <div class="resumen-hero">
+      <div class="resumen-hero__track" id="resumenHeroTrack">
+        <div class="resumen-hero__slide">
+          <img src="assets/tenis/resumen1.png" alt="Resumen Cerúndolo vs Paul" class="resumen-hero__img">
+        </div>
+      </div>
+      <div class="resumen-hero__dots" id="resumenHeroDots">
+        <button class="hero__dot hero__dot--active"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Noticias de Tenis (mismo contenido que en noticias.html) -->
+  <section class="sport-group">
+    <div class="sport-group__header">
+      <img src="assets/menu/tenis.png" alt="" width="45" height="45">
+      <h2 class="section-title">Tenis</h2>
+    </div>
+    <div class="news-carousel">
+      <div class="news-carousel__track">
+        <a href="#" class="news-carousel__item">
+          <img src="assets/noticias-page/tenis1.png" alt="">
+          <p class="news-carousel__text">Jack Sinner #1 del mundo participará del Winbledon 2026</p>
+        </a>
+        <a href="#" class="news-carousel__item">
+          <img src="assets/noticias-page/tenis2.png" alt="">
+          <p class="news-carousel__text">Wawrinka participará en su último torneo de tenis profesional, Winbledon 2026</p>
+        </a>
+        <a href="#" class="news-carousel__item">
+          <img src="assets/noticias-page/tenis3.png" alt="">
+          <p class="news-carousel__text">Sabalenka en crisis ¿Se retira de tenis profesional?</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
