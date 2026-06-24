@@ -95,3 +95,16 @@ function nextTendencia() {
 }
 
 setInterval(nextTendencia, 6000);
+
+// Carrusel de logos (Competencias, reutilizable)
+const competenciasTrack = document.getElementById('competenciasTrack');
+const competenciaItems = competenciasTrack.querySelectorAll('.logo-carousel__item');
+const competenciaItemWidth = 215 + 16; // ancho + gap
+let competenciaIndex = 0;
+
+function nextCompetencia() {
+  competenciaIndex = (competenciaIndex + 1) % competenciaItems.length;
+  competenciasTrack.style.transform = `translateX(-${competenciaIndex * competenciaItemWidth}px)`;
+}
+
+setInterval(nextCompetencia, 3000);
