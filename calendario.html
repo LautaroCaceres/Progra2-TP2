@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - Calendario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link">En vivo</a>
+        <a href="calendario.html" class="navbar__link navbar__link--active">Calendario</a>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sports-grid" id="sportsGrid">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <button class="sports-toggle" id="sportsToggle" aria-label="Mostrar deportes">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </button>
+
+  <div class="sports-grid sports-grid--floating" id="sportsGridFloating">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <main class="calendario-page">
+
+    <h2 class="section-title">Julio</h2>
+
+    <div class="filters-bar">
+      <button class="filter-btn" data-filter="deportes">
+        Deportes
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="filter-btn" data-filter="competicion">
+        Competición
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <button class="filter-btn" data-filter="instancia">
+        Instancia
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- Jueves 18 -->
+    <section class="day-group">
+      <h2 class="section-title">Jueves 18</h2>
+      <div class="calendar-cards-row">
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">13:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/chequia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Chequia</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/sudafrica.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Sudáfrica</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">16:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/suiza.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Suiza</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/bosnia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Bosnia</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">17:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/canada.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Canadá</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/catar.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Catar</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">22:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/mexico.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">México</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/coreadelsur.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Corea del Sur</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Viernes 19 -->
+    <section class="day-group">
+      <h2 class="section-title">Viernes 19</h2>
+      <div class="calendar-cards-row">
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">ATP Women</span>
+            <span class="calendar-card__time">10:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/eeuu.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Jessica Pegula</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/australia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Maya Joint</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-tenis);">TENIS</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">16:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/eeuu.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Estados Unidos</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/australia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Australia</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">19:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/escocia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Escocia</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/marruecos.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Marruecos</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">21:30 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/brasil.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Brasil</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/haiti.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Haiti</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Sábado 20 -->
+    <section class="day-group">
+      <h2 class="section-title">Sábado 20</h2>
+      <div class="calendar-cards-row">
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Final juego 1</span>
+            <span class="calendar-card__time">23:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/escudos/spurs.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Spurs</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/escudos/knicks.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Knicks</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-nba);">NBA</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">00:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/turquia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Turquía</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/paraguay.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Paraguay</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">14:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/paisesbajos.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Países Bajos</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/suecia.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Suecia</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+        <a href="#" class="calendar-card">
+          <div class="calendar-card__header">
+            <span class="calendar-card__instance">Fase de grupos</span>
+            <span class="calendar-card__time">20:00 HS</span>
+          </div>
+          <div class="calendar-card__teams">
+            <div class="calendar-card__team">
+              <img src="assets/banderas/alemania.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Alemania</span>
+            </div>
+            <div class="calendar-card__team">
+              <img src="assets/banderas/costademarfil.png" alt="" width="36" height="36">
+              <span class="calendar-card__team-name">Costa de Marfil</span>
+            </div>
+          </div>
+          <span class="calendar-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

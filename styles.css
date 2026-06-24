@@ -1083,3 +1083,102 @@ a.score-card:hover {
 .live-card-f1__drivers .live-card__event {
   margin-top: 24px;
 }
+
+/* =====================
+   PÁGINA CALENDARIO
+   ===================== */
+
+.calendario-page {
+  width: calc(100% - 512px);
+  margin-left: 256px;
+  margin-top: 24px;
+}
+
+.calendario-page > .section-title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--color-white);
+}
+
+.day-group {
+  margin-top: 64px;
+}
+
+.day-group .section-title {
+  margin-bottom: 24px;
+}
+
+.calendar-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.calendar-card {
+  width: 315px;
+  height: 200px;
+  background-color: #505050;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--color-white);
+  position: relative;
+}
+
+.calendar-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-card__instance,
+.calendar-card__time {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: #CCCCCC;
+}
+
+.calendar-card__teams {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.calendar-card__team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calendar-card__team img {
+  width: 36px;
+  height: 36px;
+}
+
+.calendar-card__team-name {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.calendar-card__league {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-white);
+  border-radius: 0 0 8px 8px;
+}
