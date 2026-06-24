@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="navbar__inner">
       <a href="index.html" class="navbar__logo">
         <img src="assets/logo.png" alt="ESPN" width="116" height="30">
@@ -21,97 +21,163 @@
         <a href="index.html" class="navbar__link navbar__link--active">Home</a>
         <a href="en-vivo.html" class="navbar__link">En vivo</a>
         <a href="calendario.html" class="navbar__link">Calendario</a>
-        <button class="navbar__edit" aria-label="Editar deportes favoritos">
-  <img src="assets/icono_editar.png" alt="" width="24" height="24">
-</button>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
       </nav>
 
       <div class="navbar__actions">
         <button class="navbar__login">Iniciar sesión</button>
-        <button class="navbar__menu" aria-label="Abrir menú de deportes">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
       </div>
     </div>
   </header>
-  
 
-  <div class="sports-menu" id="sportsMenu">
-  <div class="sports-menu__grid">
-    <a href="futbol.html" class="sports-menu__item">
-      <img src="assets/menu/futbol.png" alt="" width="36" height="36">
-      <span>Fútbol</span>
-    </a>
-    <a href="hockey.html" class="sports-menu__item">
-      <img src="assets/menu/hockey.png" alt="" width="36" height="36">
-      <span>Hockey</span>
-    </a>
-    <a href="formula1.html" class="sports-menu__item">
-      <img src="assets/menu/formula1.png" alt="" width="36" height="36">
-      <span>Fórmula1</span>
-    </a>
-    <a href="ciclismo.html" class="sports-menu__item">
-      <img src="assets/menu/ciclismo.png" alt="" width="36" height="36">
-      <span>Ciclismo</span>
-    </a>
-    <a href="mlb.html" class="sports-menu__item">
-      <img src="assets/menu/mlb.png" alt="" width="36" height="36">
-      <span>MLB</span>
-    </a>
-
-    <a href="rugby.html" class="sports-menu__item">
-      <img src="assets/menu/rugby.png" alt="" width="36" height="36">
-      <span>Rugby</span>
-    </a>
-    <a href="boxeo.html" class="sports-menu__item">
-      <img src="assets/menu/boxeo.png" alt="" width="36" height="36">
-      <span>Boxeo</span>
-    </a>
-    <a href="polo.html" class="sports-menu__item">
-      <img src="assets/menu/polo.png" alt="" width="36" height="36">
-      <span>Polo</span>
-    </a>
-    <a href="nfl.html" class="sports-menu__item">
-      <img src="assets/menu/nfl.png" alt="" width="36" height="36">
-      <span>NFL</span>
-    </a>
-    <a href="mma.html" class="sports-menu__item">
-      <img src="assets/menu/mma.png" alt="" width="36" height="36">
-      <span>MMA</span>
-    </a>
-
-    <a href="nba.html" class="sports-menu__item">
-      <img src="assets/menu/nba.png" alt="" width="36" height="36">
-      <span>NBA</span>
-    </a>
-    <a href="tenis.html" class="sports-menu__item">
-      <img src="assets/menu/tenis.png" alt="" width="36" height="36">
-      <span>Tenis</span>
-    </a>
-    <a href="motogp.html" class="sports-menu__item">
-      <img src="assets/menu/motogp.png" alt="" width="36" height="36">
-      <span>MotoGP</span>
-    </a>
-    <a href="golf.html" class="sports-menu__item">
-      <img src="assets/menu/golf.png" alt="" width="36" height="36">
-      <span>Golf</span>
-    </a>
-    <a href="run.html" class="sports-menu__item">
-      <img src="assets/menu/run.png" alt="" width="36" height="36">
-      <span>Run</span>
-    </a>
+  <!-- Grid de deportes: visible al cargar la home (Estado 2) -->
+  <div class="sports-grid" id="sportsGrid">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item">
+        <img src="assets/menu/futbol.png" alt="" width="36" height="36">
+        <span>Futbol</span>
+      </a>
+      <a href="hockey.html" class="sports-grid__item">
+        <img src="assets/menu/hockey.png" alt="" width="36" height="36">
+        <span>Hockey</span>
+      </a>
+      <a href="formula1.html" class="sports-grid__item">
+        <img src="assets/menu/formula1.png" alt="" width="36" height="36">
+        <span>Formula1</span>
+      </a>
+      <a href="boxeo.html" class="sports-grid__item">
+        <img src="assets/menu/boxeo.png" alt="" width="36" height="36">
+        <span>Boxeo</span>
+      </a>
+      <a href="ciclismo.html" class="sports-grid__item">
+        <img src="assets/menu/ciclismo.png" alt="" width="36" height="36">
+        <span>Ciclismo</span>
+      </a>
+      <a href="nfl.html" class="sports-grid__item">
+        <img src="assets/menu/nfl.png" alt="" width="36" height="36">
+        <span>NFL</span>
+      </a>
+      <a href="mlb.html" class="sports-grid__item">
+        <img src="assets/menu/mlb.png" alt="" width="36" height="36">
+        <span>MLB</span>
+      </a>
+      <a href="run.html" class="sports-grid__item">
+        <img src="assets/menu/run.png" alt="" width="36" height="36">
+        <span>RUN</span>
+      </a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item">
+        <img src="assets/menu/rugby.png" alt="" width="36" height="36">
+        <span>Rugby</span>
+      </a>
+      <a href="nba.html" class="sports-grid__item">
+        <img src="assets/menu/nba.png" alt="" width="36" height="36">
+        <span>NBA</span>
+      </a>
+      <a href="motogp.html" class="sports-grid__item">
+        <img src="assets/menu/motogp.png" alt="" width="36" height="36">
+        <span>MotoGP</span>
+      </a>
+      <a href="tenis.html" class="sports-grid__item">
+        <img src="assets/menu/tenis.png" alt="" width="36" height="36">
+        <span>Tenis</span>
+      </a>
+      <a href="polo.html" class="sports-grid__item">
+        <img src="assets/menu/polo.png" alt="" width="36" height="36">
+        <span>Polo</span>
+      </a>
+      <a href="golf.html" class="sports-grid__item">
+        <img src="assets/menu/golf.png" alt="" width="36" height="36">
+        <span>Golf</span>
+      </a>
+      <a href="mma.html" class="sports-grid__item">
+        <img src="assets/menu/mma.png" alt="" width="36" height="36">
+        <span>MMA</span>
+      </a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
   </div>
-</div>
 
+  <!-- Flecha toggle: visible solo en Estado 1 (scrolleado) -->
+  <button class="sports-toggle" id="sportsToggle" aria-label="Mostrar deportes">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+
+  <!-- Grid flotante: se abre con la flecha cuando ya se hizo scroll (no empuja contenido) -->
+  <div class="sports-grid sports-grid--floating" id="sportsGridFloating">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item">
+        <img src="assets/menu/futbol.png" alt="" width="36" height="36">
+        <span>Futbol</span>
+      </a>
+      <a href="hockey.html" class="sports-grid__item">
+        <img src="assets/menu/hockey.png" alt="" width="36" height="36">
+        <span>Hockey</span>
+      </a>
+      <a href="formula1.html" class="sports-grid__item">
+        <img src="assets/menu/formula1.png" alt="" width="36" height="36">
+        <span>Formula1</span>
+      </a>
+      <a href="boxeo.html" class="sports-grid__item">
+        <img src="assets/menu/boxeo.png" alt="" width="36" height="36">
+        <span>Boxeo</span>
+      </a>
+      <a href="ciclismo.html" class="sports-grid__item">
+        <img src="assets/menu/ciclismo.png" alt="" width="36" height="36">
+        <span>Ciclismo</span>
+      </a>
+      <a href="nfl.html" class="sports-grid__item">
+        <img src="assets/menu/nfl.png" alt="" width="36" height="36">
+        <span>NFL</span>
+      </a>
+      <a href="mlb.html" class="sports-grid__item">
+        <img src="assets/menu/mlb.png" alt="" width="36" height="36">
+        <span>MLB</span>
+      </a>
+      <a href="run.html" class="sports-grid__item">
+        <img src="assets/menu/run.png" alt="" width="36" height="36">
+        <span>RUN</span>
+      </a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item">
+        <img src="assets/menu/rugby.png" alt="" width="36" height="36">
+        <span>Rugby</span>
+      </a>
+      <a href="nba.html" class="sports-grid__item">
+        <img src="assets/menu/nba.png" alt="" width="36" height="36">
+        <span>NBA</span>
+      </a>
+      <a href="motogp.html" class="sports-grid__item">
+        <img src="assets/menu/motogp.png" alt="" width="36" height="36">
+        <span>MotoGP</span>
+      </a>
+      <a href="tenis.html" class="sports-grid__item">
+        <img src="assets/menu/tenis.png" alt="" width="36" height="36">
+        <span>Tenis</span>
+      </a>
+      <a href="polo.html" class="sports-grid__item">
+        <img src="assets/menu/polo.png" alt="" width="36" height="36">
+        <span>Polo</span>
+      </a>
+      <a href="golf.html" class="sports-grid__item">
+        <img src="assets/menu/golf.png" alt="" width="36" height="36">
+        <span>Golf</span>
+      </a>
+      <a href="mma.html" class="sports-grid__item">
+        <img src="assets/menu/mma.png" alt="" width="36" height="36">
+        <span>MMA</span>
+      </a>
+       <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
 
 <div class="scores-bar">
   <div class="scores-track">
 
-    <!-- Card 1: EN VIVO fútbol -->
     <a href="#" class="score-card">
       <div class="score-card__header">
         <span class="score-card__live">EN VIVO</span>
@@ -129,9 +195,9 @@
           <span class="score-card__score">1</span>
         </div>
       </div>
+      <span class="score-card__league" style="background-color: var(--color-mundial);">MUNDIAL</span>
     </a>
 
-    <!-- Card 2: EN VIVO básquet -->
     <a href="#" class="score-card">
       <div class="score-card__header">
         <span class="score-card__live">EN VIVO</span>
@@ -149,9 +215,9 @@
           <span class="score-card__score">109</span>
         </div>
       </div>
+      <span class="score-card__league" style="background-color: var(--color-nba);">NBA</span>
     </a>
 
-    <!-- Card 3: EN VIVO tenis -->
     <a href="#" class="score-card score-card--tenis">
       <div class="score-card__header">
         <span class="score-card__live">EN VIVO</span>
@@ -177,9 +243,9 @@
           </div>
         </div>
       </div>
+      <span class="score-card__league" style="background-color: var(--color-tenis);">ATP</span>
     </a>
 
-    <!-- Card 4: Próximo fútbol sin resultado -->
     <a href="#" class="score-card score-card--no-result">
       <div class="score-card__header">
         <span class="score-card__when">Hoy</span>
@@ -195,9 +261,9 @@
           <span class="score-card__name">Barcelona</span>
         </div>
       </div>
+      <span class="score-card__league" style="background-color: var(--color-laliga);">LALIGA</span>
     </a>
 
-    <!-- Card 5: Próximo básquet -->
     <a href="#" class="score-card">
       <div class="score-card__header">
         <span class="score-card__when">Mañana</span>
@@ -213,53 +279,152 @@
           <span class="score-card__name">Knicks</span>
         </div>
       </div>
+      <span class="score-card__league" style="background-color: var(--color-nba);">NBA</span>
     </a>
 
   </div>
 </div>
 
-<section class="hero">
-  <div class="hero__track" id="heroTrack">
+  <section class="hero">
+    <div class="hero__track" id="heroTrack">
+      <div class="hero__slide">
+        <img src="assets/hero/hamilton.png" alt="Lewis Hamilton" class="hero__img">
+        <div class="hero__content">
+          <span class="hero__time">Hace 12h</span>
+          <p class="hero__text hero__text--black">El británico cumplió su sueño de vencer vestido de rojo después de un 2025 lleno de sinsabores. Con el abandono de Kimi Antonelli, se puso a 41 puntos de la cima del Mundial. ¿Puede soñar con el octavo título?</p>
+          <a href="#" class="hero__btn">+INFO</a>
+        </div>
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/slide2.png" alt="Slide 2" class="hero__img">
+        <div class="hero__content">
+          <span class="hero__time">Hace 20h</span>
+          <p class="hero__text hero__text--white">Texto de la segunda noticia destacada del carrusel.</p>
+          <a href="#" class="hero__btn">+INFO</a>
+        </div>
+      </div>
+      <div class="hero__slide">
+        <img src="assets/hero/slide3.png" alt="Slide 3" class="hero__img">
+        <div class="hero__content">
+          <span class="hero__time">Hace 1h</span>
+          <p class="hero__text hero__text--white">Texto de la tercera noticia destacada del carrusel.</p>
+          <a href="#" class="hero__btn">+INFO</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot hero__dot--active"></button>
+      <button class="hero__dot"></button>
+      <button class="hero__dot"></button>
+    </div>
+  </section>
 
-    <!-- Slide 1 -->
-    <div class="hero__slide">
-      <img src="assets/hero/hamilton.png" alt="Lewis Hamilton" class="hero__img">
-      <div class="hero__content">
-        <span class="hero__time">Hace 12h</span>
-        <p class="hero__text hero__text--black">El británico cumplió su sueño de vencer vestido de rojo después de un 2025 lleno de sinsabores. Con el abandono de Kimi Antonelli, se puso a 41 puntos de la cima del Mundial. ¿Puede soñar con el octavo título?</p>
-        <a href="#" class="hero__btn">+INFO</a>
+  <section class="content-section">
+
+  <div class="columna-izquierda">
+
+    <div class="resumenes-col">
+      <h2 class="section-title">Resumenes</h2>
+      <div class="resumenes-carousel">
+        <div class="resumenes-track" id="resumenesTrack">
+          <a href="#" class="resumen-card">
+            <img src="assets/resumenes/resumen1.png" alt="Resumen 1">
+          </a>
+          <a href="#" class="resumen-card">
+            <img src="assets/resumenes/resumen2.png" alt="Resumen 2">
+          </a>
+          <a href="#" class="resumen-card">
+            <img src="assets/resumenes/resumen3.png" alt="Resumen 3">
+          </a>
+          <a href="#" class="resumen-card">
+            <img src="assets/resumenes/resumen4.png" alt="Resumen 4">
+          </a>
+        </div>
       </div>
     </div>
 
-    <!-- Slide 2 -->
-    <div class="hero__slide">
-      <img src="assets/hero/slide2.png" alt="Slide 2" class="hero__img">
-      <div class="hero__content">
-        <span class="hero__time">Hace 20h</span>
-        <p class="hero__text hero__text--white">Texto de la segunda noticia destacada del carrusel.</p>
-        <a href="#" class="hero__btn">+INFO</a>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="hero__slide">
-      <img src="assets/hero/slide3.png" alt="Slide 3" class="hero__img">
-      <div class="hero__content">
-        <span class="hero__time">Hace 1h</span>
-        <p class="hero__text hero__text--white">Texto de la tercera noticia destacada del carrusel.</p>
-        <a href="#" class="hero__btn">+INFO</a>
+    <div class="tendencias-col">
+      <h2 class="section-title">Tendencias</h2>
+      <div class="tendencias-carousel">
+        <div class="tendencias-track" id="tendenciasTrack">
+          <a href="#" class="tendencia-card">
+            <img src="assets/tendencias/tendencia1.png" alt="Tendencia 1">
+          </a>
+          <a href="#" class="tendencia-card">
+            <img src="assets/tendencias/tendencia2.png" alt="Tendencia 2">
+          </a>
+          <a href="#" class="tendencia-card">
+            <img src="assets/tendencias/tendencia3.png" alt="Tendencia 3">
+          </a>
+          <a href="#" class="tendencia-card">
+            <img src="assets/tendencias/tendencia4.png" alt="Tendencia 4">
+          </a>
+          <a href="#" class="tendencia-card">
+            <img src="assets/tendencias/tendencia5.png" alt="Tendencia 5">
+          </a>
+        </div>
       </div>
     </div>
 
   </div>
 
-  <!-- Puntos indicadores -->
-  <div class="hero__dots" id="heroDots">
-    <button class="hero__dot hero__dot--active"></button>
-    <button class="hero__dot"></button>
-    <button class="hero__dot"></button>
+  <div class="titulares-col">
+    <h2 class="section-title section-title--36">Titulares</h2>
+    <div class="titulares-list">
+      <a href="#" class="titular-item">
+        <img src="assets/titulares/titular1.png" alt="" width="109" height="109">
+        <div class="titular-item__text">
+          <p class="titular-item__title">Con messi el equipo Argentina VS. Islandia</p>
+          <span class="titular-item__time">Hace 2h</span>
+        </div>
+      </a>
+      <a href="#" class="titular-item">
+        <img src="assets/titulares/titular2.png" alt="" width="109" height="109">
+        <div class="titular-item__text">
+          <p class="titular-item__title">Tenis: Williams volvió con triunfo en Queen's</p>
+          <span class="titular-item__time">Hace 12h</span>
+        </div>
+      </a>
+      <a href="#" class="titular-item">
+        <img src="assets/titulares/titular3.png" alt="" width="109" height="109">
+        <div class="titular-item__text">
+          <p class="titular-item__title">Los tres favoritos para reemplazar a Balerdi</p>
+          <span class="titular-item__time">Hace 8h</span>
+        </div>
+      </a>
+      <a href="#" class="titular-item">
+        <img src="assets/titulares/titular4.png" alt="" width="109" height="109">
+        <div class="titular-item__text">
+          <p class="titular-item__title">Sebastian Villa y un guiño público para Boca</p>
+          <span class="titular-item__time">Hace 13h</span>
+        </div>
+      </a>
+      <a href="#" class="titular-item">
+        <img src="assets/titulares/titular5.png" alt="" width="109" height="109">
+        <div class="titular-item__text">
+          <p class="titular-item__title">Solana Sierra avanzó en Hertogenbosch</p>
+          <span class="titular-item__time">Hace 7h</span>
+        </div>
+      </a>
+      <a href="#" class="titular-item">
+  <img src="assets/titulares/titular6.png" alt="" width="109" height="109">
+  <div class="titular-item__text">
+    <p class="titular-item__title">Pro League: fixture, resultados y tabla femenina</p>
+    <span class="titular-item__time">Hace 9h</span>
   </div>
+</a>
+<a href="#" class="titular-item">
+  <img src="assets/titulares/titular7.png" alt="" width="109" height="109">
+  <div class="titular-item__text">
+    <p class="titular-item__title">F1 cambia las reglas para 2027 y crece la polémica</p>
+    <span class="titular-item__time">Hace 7h</span>
+  </div>
+</a>
+    </div>
+  </div>
+
 </section>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
