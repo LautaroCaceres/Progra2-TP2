@@ -11,22 +11,41 @@
 </head>
 <body>
 
-  <header class="navbar" id="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">
-        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
-      </a>
-      <nav class="navbar__nav">
-        <a href="index.html" class="navbar__link">Home</a>
-        <a href="en-vivo.html" class="navbar__link navbar__link--active">En vivo</a>
-        <a href="calendario.html" class="navbar__link">Calendario</a>
-        <a href="noticias.html" class="navbar__link">Noticias</a>
-      </nav>
-      <div class="navbar__actions">
-        <button class="navbar__login">Iniciar sesión</button>
-      </div>
+ <header class="navbar" id="navbar">
+  <div class="navbar__inner">
+
+    <button class="navbar__mobile-menu" aria-label="Abrir menú">
+      <img src="assets/mobile/menu.png" alt="" width="36" height="36">
+    </button>
+
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+    </a>
+
+    <nav class="navbar__nav">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="en-vivo.html" class="navbar__link navbar__link--active">En vivo</a>
+      <a href="calendario.html" class="navbar__link">Calendario</a>
+      <a href="noticias.html" class="navbar__link">Noticias</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="navbar__login">Iniciar sesión</button>
     </div>
-  </header>
+
+    <button class="navbar__mobile-login" aria-label="Iniciar sesión">
+      <img src="assets/mobile/sesion.png" alt="" width="36" height="36">
+    </button>
+
+  </div>
+</header>
+
+<nav class="mobile-secondary-nav">
+  <a href="index.html" class="mobile-secondary-nav__link">Home</a>
+  <a href="en-vivo.html" class="mobile-secondary-nav__link mobile-secondary-nav__link--active">En vivo</a>
+  <a href="calendario.html" class="mobile-secondary-nav__link">Calendario</a>
+  <a href="noticias.html" class="mobile-secondary-nav__link">Noticias</a>
+</nav>
 
   <div class="sports-grid" id="sportsGrid">
     <div class="sports-grid__row">
@@ -271,20 +290,29 @@
   </div>
   <div class="live-card-f1__drivers">
     <div class="live-card__event">
-      <img src="assets/escudos/ferrari.png" alt="" width="24" height="24">
-      <span class="live-card__event-text">(Ferrari) Lewis Hamilton</span>
-      <span class="live-card__event-time">1°</span>
-    </div>
-    <div class="live-card__event">
-      <img src="assets/escudos/mercedes.png" alt="" width="24" height="24">
-      <span class="live-card__event-text">(Mercedes) George Russell</span>
-      <span class="live-card__event-time">2°</span>
-    </div>
-    <div class="live-card__event">
-      <img src="assets/escudos/mclaren.png" alt="" width="24" height="24">
-      <span class="live-card__event-text">(McLaren) Lando Norris</span>
-      <span class="live-card__event-time">3°</span>
-    </div>
+  <img src="assets/escudos/ferrari.png" alt="" width="24" height="24">
+  <span class="live-card__event-text">
+    <span class="event-text--full">(Ferrari) Lewis Hamilton</span>
+    <span class="event-text--short">FER - Hamilton</span>
+  </span>
+  <span class="live-card__event-time">1°</span>
+</div>
+<div class="live-card__event">
+  <img src="assets/escudos/mercedes.png" alt="" width="24" height="24">
+  <span class="live-card__event-text">
+    <span class="event-text--full">(Mercedes) George Russell</span>
+    <span class="event-text--short">MER - Russell</span>
+  </span>
+  <span class="live-card__event-time">2°</span>
+</div>
+<div class="live-card__event">
+  <img src="assets/escudos/mclaren.png" alt="" width="24" height="24">
+  <span class="live-card__event-text">
+    <span class="event-text--full">(McLaren) Lando Norris</span>
+    <span class="event-text--short">MCL - Norris</span>
+  </span>
+  <span class="live-card__event-time">3°</span>
+</div>
   </div>
   <span class="live-card__league" style="background-color: var(--color-f1);">Carrera</span>
 </a>

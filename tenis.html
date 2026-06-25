@@ -12,21 +12,33 @@
 <body>
 
   <header class="navbar" id="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">
-        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
-      </a>
-      <nav class="navbar__nav">
-        <a href="index.html" class="navbar__link">Home</a>
-        <a href="en-vivo.html" class="navbar__link">En vivo</a>
-        <a href="calendario.html" class="navbar__link">Calendario</a>
-        <a href="noticias.html" class="navbar__link">Noticias</a>
-      </nav>
-      <div class="navbar__actions">
-        <button class="navbar__login">Iniciar sesión</button>
-      </div>
+  <div class="navbar__inner">
+    
+    <button class="navbar__mobile-menu" aria-label="Abrir menú">
+      <img src="assets/mobile/menu.png" alt="" width="36" height="36">
+    </button>
+
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+    </a>
+
+    <nav class="navbar__nav">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="en-vivo.html" class="navbar__link">En vivo</a>
+      <a href="calendario.html" class="navbar__link">Calendario</a>
+      <a href="noticias.html" class="navbar__link">Noticias</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="navbar__login">Iniciar sesión</button>
     </div>
-  </header>
+
+    <button class="navbar__mobile-login" aria-label="Iniciar sesión">
+      <img src="assets/mobile/sesion.png" alt="" width="36" height="36">
+    </button>
+
+  </div>
+</header>
 
   <!-- Barra secundaria de deporte: fija, reemplaza al sports-grid -->
   <nav class="sport-navbar">

@@ -10,9 +10,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header class="navbar" id="navbar">
+ <header class="navbar" id="navbar">
     <div class="navbar__inner">
+
+      <button class="navbar__mobile-menu" aria-label="Abrir menú">
+        <img src="assets/mobile/menu.png" alt="" width="36" height="36">
+      </button>
+
       <a href="index.html" class="navbar__logo">
         <img src="assets/logo.png" alt="ESPN" width="116" height="30">
       </a>
@@ -25,8 +29,20 @@
       <div class="navbar__actions">
         <button class="navbar__login">Iniciar sesión</button>
       </div>
+
+      <button class="navbar__mobile-login" aria-label="Iniciar sesión">
+        <img src="assets/mobile/sesion.png" alt="" width="36" height="36">
+      </button>
+
     </div>
   </header>
+
+  <nav class="mobile-secondary-nav">
+    <a href="index.html" class="mobile-secondary-nav__link">Home</a>
+    <a href="en-vivo.html" class="mobile-secondary-nav__link">En vivo</a>
+    <a href="calendario.html" class="mobile-secondary-nav__link">Calendario</a>
+    <a href="noticias.html" class="mobile-secondary-nav__link mobile-secondary-nav__link--active">Noticias</a>
+  </nav>
 
   <div class="sports-grid" id="sportsGrid">
     <div class="sports-grid__row">
@@ -78,9 +94,7 @@
     </div>
   </div>
 
-  <main class="noticia-kimi-page">
-
-  <img src="assets/logos/urba-logo.png" alt="URBA" class="noticia-kimi__sport-logo">
+ <main class="noticia-kimi-page">
 
   <div class="noticia-kimi-content">
 
@@ -93,11 +107,13 @@
     </div>
 
     <div class="noticia-kimi__right">
-      <h2 class="noticia-kimi__title noticia-kimi__title--urba">
-        <span class="noticia-kimi__title-line">Los dos equipos</span>
-        <span class="noticia-kimi__title-line">invictos en la</span>
-        <span class="noticia-kimi__title-line">categoría <em>URBA</em></span>
-      </h2>
+      <div class="noticia-urba__header">
+        <h2 class="noticia-kimi__title noticia-kimi__title--urba">
+          <span class="noticia-kimi__title-line">Los dos equipos invictos en la</span>
+          <span class="noticia-kimi__title-line">categoría <em>URBA</em></span>
+        </h2>
+        <img src="assets/logos/urba-logo.png" alt="URBA" class="noticia-urba__logo">
+      </div>
       <img src="assets/noticias/urba-rugby.png" alt="Rugby URBA" class="noticia-kimi__photo">
     </div>
 

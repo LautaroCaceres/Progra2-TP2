@@ -113,3 +113,20 @@ setInterval(nextCompetencia, 3000);
 document.querySelectorAll('.inactive-link').forEach(link => {
   link.addEventListener('click', (e) => e.preventDefault());
 });
+
+// Menú hamburguesa mobile (drawer)
+const mobileMenuBtn = document.querySelector('.navbar__mobile-menu');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
+
+if (mobileMenuBtn && mobileDrawer && mobileDrawerOverlay) {
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileDrawer.classList.add('mobile-drawer--open');
+    mobileDrawerOverlay.classList.add('mobile-drawer-overlay--open');
+  });
+
+  mobileDrawerOverlay.addEventListener('click', () => {
+    mobileDrawer.classList.remove('mobile-drawer--open');
+    mobileDrawerOverlay.classList.remove('mobile-drawer-overlay--open');
+  });
+}

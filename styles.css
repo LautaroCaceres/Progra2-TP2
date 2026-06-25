@@ -1880,6 +1880,18 @@ body:has(.sport-navbar) {
 .inactive-link:hover {
   opacity: 1 !important;
 }
+.noticia-urba__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.noticia-urba__logo {
+  width: 156px;
+  height: auto;
+  flex-shrink: 0;
+}
 
 
 
@@ -1890,10 +1902,20 @@ body:has(.sport-navbar) {
   display: none;
 }
 
-
+.hero__mobile-link {
+  display: none;
+}
 /* =====================
    RESPONSIVE MOBILE (max-width: 768px)
    ===================== */
+.event-text--short {
+  display: none;
+}
+
+.mobile-drawer,
+.mobile-drawer-overlay {
+  display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -2037,7 +2059,9 @@ body:has(.sport-navbar) {
 }
 
 .score-card--tenis {
-  width: 181px; /* en mobile probablemente no haya espacio extra para tenis, ajustamos igual */
+  width: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .score-card__live {
@@ -2293,6 +2317,808 @@ body:has(.sport-navbar) {
 .footer {
   padding-left: 16px;
   padding-right: 16px;
+}
+/* Sport-navbar mobile: ícono+nombre fijo, links en carrusel scrolleable */
+.sport-navbar {
+  width: 100%;
+  margin-left: 0;
+  height: 36px;
+  top: 56px;
+  padding-left: 16px;
+}
+
+.sport-navbar__sport {
+  gap: 4px;
+  margin-left: 0;
+  padding-right: 16px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.sport-navbar__sport img {
+  width: 24px;
+  height: 24px;
+}
+
+.sport-navbar__sport span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sport-navbar__links {
+  margin: 0;
+  padding-left: 16px;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex-wrap: nowrap;
+}
+
+.sport-navbar__links::-webkit-scrollbar {
+  display: none;
+}
+
+.sport-navbar__link {
+  font-size: 16px;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+/* Ajustamos el padding-top del body para páginas con sport-navbar en mobile */
+body:has(.sport-navbar) {
+  padding-top: 92px; /* 56px navbar + 36px sport-navbar */
+}
+
+/* vs-hero mobile (Tenis, NBA, Real Madrid) */
+.sport-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.vs-hero__img {
+  width: 370px;
+  height: 117px;
+}
+
+/* Resumen mobile */
+.resumen-hero {
+  width: 370px;
+  height: 224px;
+}
+.sport-page .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.player-card {
+  width: 106px;
+}
+
+.player-card img {
+  width: 106px;
+  height: 106px;
+}
+
+.player-card__name {
+  font-size: 12px;
+  font-weight: 500;
+  height: 36px;
+}
+
+.vs-hero__img {
+  width: 100%;
+  max-width: 370px;
+  height: 117px;
+}
+
+.resumen-hero {
+  width: 100%;
+  max-width: 370px;
+  height: 224px;
+  margin: 0;
+}
+.sport-page .sport-group__header img {
+  display: none;
+}
+
+/* Página de jugador (Sinner) mobile */
+.player-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+.player-header {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.player-header__text {
+  position: relative;
+  margin-top: 16px;
+}
+
+.player-name {
+  position: absolute;
+  top: -280px; /* sube para superponerse sobre la foto, que ahora está arriba */
+  left: 0;
+  z-index: 2;
+}
+
+.player-name__first {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.player-name__last {
+  font-size: 38px;
+  font-weight: 900;
+  border-bottom-width: 2px;
+}
+
+.player-rank {
+  position: absolute;
+  top: -190px;
+  left: 0;
+  z-index: 2;
+  gap: 4px;
+}
+
+.player-rank__flag {
+  width: 26px;
+  height: 18px;
+}
+
+.player-rank__text {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.player-header__photo {
+  width: 236px;
+  height: 256px;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+}
+
+.player-stats-card {
+  position: static;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  margin-top: 0;
+}
+
+.player-stats-card p,
+.player-stats-card li {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Historial: reutiliza el patrón de score-card de tenis */
+.player-matches {
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.player-match-card {
+  width: auto;
+  height: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.player-match-card__info {
+  font-size: 16px;
+}
+
+.player-match-card__player span {
+  font-size: 16px;
+}
+
+.player-match-card__sets span {
+  font-size: 16px;
+}
+/* Noticia individual (Hamilton/estilo) mobile */
+.noticia-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 0;
+}
+
+.noticia-page > .section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.noticia-hero {
+  margin-top: 16px;
+}
+
+.noticia-hero__img {
+  width: 100%;
+  max-width: 370px;
+  height: 212px;
+}
+
+.noticia-content {
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.noticia-content__left {
+  width: 100%;
+  gap: 16px;
+  justify-content: flex-start;
+  order: 1;
+  display: contents; /* para que sus hijos se mezclen con los hermanos en el order del padre */
+}
+
+.noticia-paragraph {
+  width: 100%;
+  padding: 10px 18px;
+}
+
+.noticia-paragraph p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.noticia-content__right {
+  width: 100%;
+  padding: 10px 18px;
+  order: 3; /* aparece después del 2do párrafo */
+}
+
+.noticia-paragraph:nth-of-type(1) {
+  order: 1;
+}
+
+.noticia-paragraph:nth-of-type(2) {
+  order: 2;
+}
+
+.noticia-paragraph:nth-of-type(3) {
+  order: 4;
+}
+
+.noticia-paragraph:nth-of-type(4) {
+  order: 5;
+}
+
+.noticia-stats__title {
+  display: none; /* en mobile no se ve el título "Estadísticas", según tu captura */
+}
+
+.noticia-stats__item {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.noticia-stats__item + .noticia-stats__item {
+  margin-top: 12px;
+}
+
+.noticia-author {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #CCCCCC;
+}
+
+.noticia-page .sport-group {
+  margin-top: 24px;
+}
+/* Dentro del media query */
+.hero__mobile-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Noticia Kimi mobile */
+.noticia-kimi-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+/* El logo F1 y "GP MÓNACO" van juntos en una fila */
+.noticia-kimi__sport-logo {
+  width: 68px;
+  height: 38px;
+  display: inline-block;
+}
+
+.noticia-kimi-content {
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.noticia-kimi__right {
+  width: 100%;
+  order: 1;
+}
+
+.noticia-kimi__title {
+  display: flex;
+  flex-direction: column;
+}
+.noticia-kimi__title-row {
+  display: flex;
+  gap: 6px;
+}
+
+.noticia-kimi__title-line {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.noticia-kimi__title-line--big {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.noticia-kimi__photo {
+  width: 100%;
+  max-width: 370px;
+  height: 230px;
+  margin-top: 16px;
+}
+
+.noticia-kimi__text {
+  width: 100%;
+  order: 2;
+  padding: 16px;
+  gap: 24px;
+  margin-top: 16px;
+  background-color: #505050;
+  border-radius: 8px;
+}
+.noticia-kimi-page .sport-group {
+  margin-top: 24px;
+}
+.noticia-kimi__text p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.noticia-kimi-page .noticia-author {
+  margin-top: 16px;
+  font-size: 14px;
+}
+/* Noticia URBA mobile */
+.noticia-urba__header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.noticia-urba__logo {
+  height: 60px;
+  width: auto;
+  margin-top: 0;
+}
+
+.noticia-kimi__title--urba .noticia-kimi__title-line:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.noticia-kimi__title--urba .noticia-kimi__title-line:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.noticia-kimi__title--urba em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Página minuto a minuto mobile */
+.match-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+.vs-hero__img {
+  width: 370px;
+  height: 120px;
+}
+
+.match-header {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.match-header__title,
+.match-header__instance {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.match-header__instance {
+  margin-top: 4px;
+}
+
+.match-plays {
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.match-play {
+  width: 100%;
+  max-width: 370px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px 14px;
+  gap: 8px;
+}
+
+.match-play__info {
+  max-width: 100%;
+  gap: 4px;
+}
+
+.match-play__title,
+.match-play__time {
+  font-size: 14px;
+}
+
+.match-play__desc {
+  font-size: 14px;
+}
+
+.match-play__score {
+  align-self: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.match-play__number {
+  font-size: 20px;
+}
+
+.match-play__abbr {
+  font-size: 14px;
+}
+
+/* Página Noticias mobile */
+.noticias-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+.noticias-page > .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.noticias-page .filters-bar {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  width: auto;
+  padding: 4px 6px;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.noticias-page .sport-group {
+  margin-top: 48px;
+}
+
+.noticias-page .sport-group:first-of-type {
+  margin-top: 36px;
+}
+
+.sport-group__header img {
+  width: 36px;
+  height: 36px;
+}
+
+.sport-group__header {
+  gap: 16px;
+}
+
+.noticias-page .news-carousel {
+  margin-top: 36px;
+}
+
+/* Página En Vivo mobile */
+.en-vivo-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+.en-vivo-page > .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.en-vivo-page .filters-bar {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.en-vivo-page .sport-group {
+  margin-top: 48px;
+}
+
+.en-vivo-page .sport-group:first-of-type {
+  margin-top: 36px;
+}
+
+.en-vivo-page .sport-group__header img {
+  width: 36px;
+  height: 36px;
+}
+
+.en-vivo-page .live-cards-row {
+  gap: 16px;
+}
+
+/* Card grande de En vivo mobile */
+.live-card {
+  width: 276px;
+  height: auto;
+  padding: 12px 16px;
+}
+
+.live-card__team {
+  width: auto;
+  height: auto;
+  gap: 4px;
+}
+
+.live-card__team img {
+  width: 24px;
+  height: 24px;
+}
+
+.live-card__team-name {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.live-card__team-record {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.live-card__team-score {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.live-card__center {
+  width: auto;
+  height: auto;
+  margin: 0 18px;
+}
+
+.live-card__time {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.live-card__event {
+  margin-top: 16px;
+  padding: 8px;
+  gap: 8px;
+}
+
+.live-card-f1__drivers .live-card__event {
+  margin-top: 8px;
+}
+
+.live-card__event img {
+  width: 24px;
+  height: 24px;
+}
+
+.live-card__event-text,
+.live-card__event-time {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.live-card__league {
+  margin-top: 12px;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: -12px;
+  width: calc(100% + 32px);
+  font-size: 20px;
+  font-weight: 600;
+  position: static;
+  border-radius: 0 0 8px 8px;
+  height: auto;
+  padding: 6px;
+}
+.live-card__teams {
+  align-items: center;
+}
+
+.event-text--full {
+  display: none;
+}
+
+.event-text--short {
+  display: inline;
+}
+/* Página Calendario mobile */
+.calendario-page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+.calendario-page > .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.calendario-page .filters-bar {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.calendario-page .day-group {
+  margin-top: 48px;
+}
+
+.calendario-page .day-group:first-of-type {
+  margin-top: 36px;
+}
+
+.calendar-cards-row {
+  gap: 16px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.calendar-cards-row::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-card {
+  flex-shrink: 0;
+  width: 260px;
+  height: 205px;
+  padding: 16px 14px;
+}
+
+.calendar-card__instance,
+.calendar-card__time {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.calendar-card__teams {
+  margin-top: 12px;
+  gap: 24px;
+}
+
+.calendar-card__team img {
+  width: 36px;
+  height: 36px;
+}
+
+.calendar-card__team-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.calendar-card__league {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mobile-drawer-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 199;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.mobile-drawer-overlay--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 204px;
+  height: 100%;
+  background-color: var(--color-white);
+  padding: 16px;
+  z-index: 200;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+}
+
+.mobile-drawer--open {
+  transform: translateX(0);
+}
+
+.mobile-drawer__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  text-decoration: none;
+  color: var(--color-black);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.mobile-drawer__item img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 }
 
