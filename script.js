@@ -130,3 +130,17 @@ if (mobileMenuBtn && mobileDrawer && mobileDrawerOverlay) {
     mobileDrawerOverlay.classList.remove('mobile-drawer-overlay--open');
   });
 }
+
+// Cambiar ícono a versión blanca en hover (sports-grid)
+document.querySelectorAll('.sports-grid__item img').forEach(img => {
+  const originalSrc = img.src;
+  const hoverSrc = originalSrc.replace(/(\.[a-zA-Z]+)$/, '2$1');
+
+  img.parentElement.addEventListener('mouseenter', () => {
+    img.src = hoverSrc;
+  });
+
+  img.parentElement.addEventListener('mouseleave', () => {
+    img.src = originalSrc;
+  });
+});
