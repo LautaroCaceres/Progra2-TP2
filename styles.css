@@ -1917,6 +1917,18 @@ body:has(.sport-navbar) {
   display: none;
 }
 
+.calendar-featured {
+  margin-top: 64px;
+}
+
+.calendar-featured__img {
+  width: 1408px;
+  height: 792px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
 @media (max-width: 768px) {
 
   /* Reset de grilla mobile */
@@ -3119,6 +3131,12 @@ body:has(.sport-navbar) {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+}
+
+.calendar-featured__img {
+  width: 100%;
+  max-width: 370px;
+  height: 208px;
 }
 }
 
