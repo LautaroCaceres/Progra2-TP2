@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - Kimi Antonelli hace historia en el GP Mónaco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link">En vivo</a>
+        <a href="calendario.html" class="navbar__link">Calendario</a>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sports-grid" id="sportsGrid">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <button class="sports-toggle" id="sportsToggle" aria-label="Mostrar deportes">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </button>
+
+  <div class="sports-grid sports-grid--floating" id="sportsGridFloating">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <main class="noticia-kimi-page">
+
+    <img src="assets/logos/f1-logo.png" alt="Fórmula 1" class="noticia-kimi__sport-logo">
+
+    <div class="noticia-kimi-content">
+
+      <div class="noticia-kimi__text">
+        <p>El italiano ganó su quinta carrera consecutiva Fórmula 1 y lo hizo nada menos que en el glamoroso principado. Estiró su ventaja a 66 puntos sobre Lewis Hamilton, el nuevo escolta quien llegó segundo. Isack Hadjar completó el podio y George Russell no sumó.</p>
+
+        <p>Kimi Antonelli no para de hacer historia. Con tan solo 19 años domina la Fórmula 1 con una superioridad que abruma, hilvanó su quinto triunfo consecutivo, lleva tres meses seguidos como único vencedor y, por si algo quedaba, acaba de convertirse con 19 años, 9 meses y 13 días, en el piloto más joven de la historia en ganar el GP de Mónaco, un lugar reservado para los más grandes, esa carrera que todos quieren ganar.</p>
+
+        <p>Dominó de punta a punta en Mónaco y se quedó con su primer Grand Chelem (hacer la pole, ganar liderando todos los giros y lograr el récord de vuelta). Antonelli está marcado para ocupar un lugar grande en la F1.</p>
+
+        <p>Antonelli llegará a Barcelona con 66 puntos de ventaja sobre Hamilton, el nuevo escolta después de la debacle de Russell. Son dos carreras y un segundo puesto de ventaja en carreras sin sprint.</p>
+      </div>
+
+      <div class="noticia-kimi__right">
+        <h2 class="noticia-kimi__title">
+          <span class="noticia-kimi__title-line">Kimi Antonelli</span>
+          <span class="noticia-kimi__title-line">hace historia en el</span>
+          <span class="noticia-kimi__title-line noticia-kimi__title-line--big">GP MÓNACO</span>
+        </h2>
+        <img src="assets/noticias/kimi-monaco.png" alt="Kimi Antonelli" class="noticia-kimi__photo">
+      </div>
+
+    </div>
+
+    <p class="noticia-author">Alejo Iriart<br>5 de jun, 2026, 13:35</p>
+
+  </main>
+<footer class="footer">
+  <img src="assets/logo.png" alt="ESPN" width="100" height="26" class="footer__logo">
+  <p class="footer__text">© 2026 ESPN. Todos los derechos reservados.</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

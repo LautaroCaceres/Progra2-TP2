@@ -1693,3 +1693,190 @@ body:has(.sport-navbar) {
   width: 50%;
   display: block;
 }
+
+/* =====================
+   PÁGINA DE NOTICIA INDIVIDUAL
+   ===================== */
+
+.noticia-page {
+  width: calc(100% - 512px);
+  margin-left: 256px;
+  margin-top: 24px;
+}
+
+.noticia-page > .section-title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--color-white);
+}
+
+.noticia-hero {
+  margin-top: 24px;
+}
+
+.noticia-hero__img {
+  width: 1408px;
+  height: 792px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.noticia-content {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: stretch;
+}
+
+.noticia-content__left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.noticia-paragraph {
+  width: 960px;
+  background-color: #505050;
+  border-radius: 8px;
+  padding: 16px 130px;
+}
+
+.noticia-paragraph p {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.noticia-content__right {
+  flex: 1;
+  background-color: #505050;
+  border-radius: 8px;
+  padding: 54px 48px;
+}
+
+.noticia-stats__title {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.noticia-stats__item {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-white);
+  margin-top: 75px;
+}
+
+.noticia-author {
+  margin-top: 24px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 16px;
+  color: #CCCCCC;
+}
+
+.noticia-page .sport-group {
+  margin-top: 12px;
+}
+
+/* =====================
+   PÁGINA NOTICIA KIMI (layout 2 columnas)
+   ===================== */
+
+.noticia-kimi-page {
+  width: calc(100% - 512px);
+  margin-left: 256px;
+  margin-top: 24px;
+}
+
+.noticia-kimi__sport-logo {
+  width: 156px;
+  height: 87px;
+  display: block;
+}
+
+.noticia-kimi-content {
+  display: flex;
+  margin-top: 0;
+}
+
+.noticia-kimi__text {
+  width: 50%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 42px;
+}
+
+.noticia-kimi__text p {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.noticia-kimi__right {
+  width: 50%;
+}
+
+.noticia-kimi__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.noticia-kimi__title-line {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 60px;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.noticia-kimi__title-line--big {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.noticia-kimi__photo {
+  width: 100%;
+  height: 701px;
+  object-fit: cover;
+  display: block;
+  margin-top: 40px;
+}
+
+.noticia-kimi-page .noticia-author {
+  margin-top: 12px;
+}
+
+/* =====================
+   VARIANTE: TÍTULO SIN LÍNEA GRANDE (URBA)
+   ===================== */
+
+.noticia-kimi__title--urba .noticia-kimi__title-line {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.noticia-kimi__title--urba em {
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* Links sin destino real: quitar apariencia clickeable */
+.inactive-link {
+  cursor: default !important;
+}
+
+.inactive-link:hover {
+  opacity: 1 !important;
+}

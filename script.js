@@ -108,3 +108,8 @@ function nextCompetencia() {
 }
 
 setInterval(nextCompetencia, 3000);
+
+// Anula la navegación de los links inactivos (href="#" sin destino real)
+document.querySelectorAll('.inactive-link').forEach(link => {
+  link.addEventListener('click', (e) => e.preventDefault());
+});
