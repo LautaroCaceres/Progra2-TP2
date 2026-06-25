@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - Patriots vs Seahawks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link navbar__link--active">En vivo</a>
+        <a href="calendario.html" class="navbar__link">Calendario</a>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sports-grid" id="sportsGrid">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <button class="sports-toggle" id="sportsToggle" aria-label="Mostrar deportes">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </button>
+
+  <div class="sports-grid sports-grid--floating" id="sportsGridFloating">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <main class="match-page">
+
+  <section class="vs-hero">
+  <div class="vs-hero__clickable">
+    <img src="assets/minuto-a-minuto/real-madrid-vs-barcelona.png" alt="Real Madrid vs Barcelona" class="vs-hero__img">
+    <a href="real-madrid.html" class="vs-hero__half vs-hero__half--left" aria-label="Ver Real Madrid"></a>
+  </div>
+</section>
+
+  <div class="match-header">
+    <h2 class="match-header__title">Real Madrid vs Barcelona</h2>
+    <p class="match-header__instance">Primer Tiempo</p>
+  </div>
+
+  <div class="match-plays">
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Tarjeta amarilla</p>
+        <p class="match-play__time">38' - 1°</p>
+        <p class="match-play__desc">Amarilla para Vinícius Jr. tras una falta dura sobre Pedri en mitad de cancha.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">1</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">1</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Gol</p>
+        <p class="match-play__time">35' - 1°</p>
+        <p class="match-play__desc">¡GOL! Lamine Yamal define cruzado tras un desborde por la derecha, asistido por Pedri.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">1</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">1</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Atajada</p>
+        <p class="match-play__time">29' - 1°</p>
+        <p class="match-play__desc">Gran atajada de Ter Stegen que evita el segundo gol del Real Madrid tras remate de Bellingham.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">1</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Gol</p>
+        <p class="match-play__time">22' - 1°</p>
+        <p class="match-play__desc">¡GOL! Jude Bellingham cabecea tras un córner ejecutado por Arda Güler. El Real Madrid se pone en ventaja.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">1</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Tiro de esquina</p>
+        <p class="match-play__time">21' - 1°</p>
+        <p class="match-play__desc">Córner para el Real Madrid tras un disparo de Mbappé desviado por la defensa del Barcelona.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Tarjeta amarilla</p>
+        <p class="match-play__time">14' - 1°</p>
+        <p class="match-play__desc">Amarilla para Pau Cubarsí por una falta sobre Mbappé cuando este encaraba al área.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Remate desviado</p>
+        <p class="match-play__time">8' - 1°</p>
+        <p class="match-play__desc">Disparo de media distancia de Raphinha que se va desviado por encima del arco.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-play">
+      <div class="match-play__info">
+        <p class="match-play__title">Comienza el partido</p>
+        <p class="match-play__time">0' - 1°</p>
+        <p class="match-play__desc">Arranca el clásico en el Santiago Bernabéu. Saque inicial a cargo del Real Madrid.</p>
+      </div>
+      <div class="match-play__score">
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">RMA</span>
+        </div>
+        <div class="match-play__team">
+          <span class="match-play__number">0</span>
+          <span class="match-play__abbr">BAR</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
