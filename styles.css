@@ -1411,3 +1411,169 @@ body:has(.sport-navbar) {
   display: flex;
   gap: 8px;
 }
+
+/* =====================
+   PÁGINA DE JUGADOR (SINNER)
+   ===================== */
+
+.player-page {
+  width: calc(100% - 512px);
+  margin-left: 256px;
+  margin-top: 42px;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+}
+
+.player-name__first {
+  font-family: var(--font-main);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 49px;
+  color: var(--color-white);
+}
+
+.player-name__last {
+  font-family: var(--font-main);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 200px;
+  color: var(--color-white);
+  border-bottom: 3px solid var(--color-red);
+  padding-bottom: 8px;
+  width: fit-content;
+}
+
+.player-rank {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.player-rank__flag {
+  width: 101px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.player-rank__text {
+  font-family: var(--font-main);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.player-stats-card {
+  width: 412px;
+  height: 206px;
+  background-color: #3B3B3B;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 24px;
+  color: var(--color-white);
+}
+
+.player-stats-card p,
+.player-stats-card li {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.player-stats-card ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.player-header__photo {
+  width: 646px;
+  height: 646px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.player-matches {
+  display: flex;
+  gap: 16px;
+  margin-top: 36px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.player-matches::-webkit-scrollbar {
+  display: none;
+}
+
+.player-match-card {
+  flex-shrink: 0;
+  height: 238px;
+  background-color: #505050;
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-match-card__info {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: #CCCCCC;
+}
+
+.player-match-card__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.player-match-card__row:first-of-type {
+  margin-top: 21px;
+}
+
+.player-match-card__player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.player-match-card__player img {
+  width: 36px;
+  height: 36px;
+}
+
+.player-match-card__player span {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.player-match-card__sets {
+  display: flex;
+  gap: 12px;
+}
+
+.player-match-card__sets span {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 24px;
+  color: #CCCCCC;
+}
+
+.player-match-card__sets span.winner {
+  color: var(--color-red);
+}
