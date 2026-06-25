@@ -13,6 +13,12 @@
 
   <header class="navbar" id="navbar">
     <div class="navbar__inner">
+
+       <!-- Menú hamburguesa: solo visible en mobile -->
+  <button class="navbar__mobile-menu" aria-label="Abrir menú">
+    <img src="assets/mobile/menu.png" alt="" width="36" height="36">
+  </button>
+
       <a href="index.html" class="navbar__logo">
         <img src="assets/logo.png" alt="ESPN" width="116" height="30">
       </a>
@@ -27,8 +33,21 @@
       <div class="navbar__actions">
         <button class="navbar__login">Iniciar sesión</button>
       </div>
+
+       <!-- Icono login: solo visible en mobile -->
+  <button class="navbar__mobile-login" aria-label="Iniciar sesión">
+     <img src="assets/mobile/sesion.png" alt="" width="36" height="36">
+  </button>
+
     </div>
   </header>
+
+  <nav class="mobile-secondary-nav">
+  <a href="index.html" class="mobile-secondary-nav__link mobile-secondary-nav__link--active">Home</a>
+  <a href="en-vivo.html" class="mobile-secondary-nav__link">En vivo</a>
+  <a href="calendario.html" class="mobile-secondary-nav__link">Calendario</a>
+  <a href="noticias.html" class="mobile-secondary-nav__link">Noticias</a>
+</nav>
 
   <!-- Grid de deportes: visible al cargar la home (Estado 2) -->
   <div class="sports-grid" id="sportsGrid">

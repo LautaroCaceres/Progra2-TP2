@@ -1880,3 +1880,419 @@ body:has(.sport-navbar) {
 .inactive-link:hover {
   opacity: 1 !important;
 }
+
+
+
+/* Ocultar elementos mobile-only en desktop por default */
+.navbar__mobile-menu,
+.navbar__mobile-login,
+.mobile-secondary-nav {
+  display: none;
+}
+
+
+/* =====================
+   RESPONSIVE MOBILE (max-width: 768px)
+   ===================== */
+
+@media (max-width: 768px) {
+
+  /* Reset de grilla mobile */
+  :root {
+    --grid-margin-mobile: 16px;
+    --grid-gutter-mobile: 8px;
+  }
+
+  body {
+    padding-top: 92px;
+  }
+
+  .sports-grid,
+.sports-toggle,
+.sports-grid--floating {
+  display: none !important;
+}
+  /* Navbar mobile */
+  .navbar {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+
+  .navbar__inner {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  /* Ocultar nav de links y acciones de desktop */
+  .navbar__nav {
+    display: none;
+  }
+
+  .navbar__login {
+    display: none;
+  }
+
+  /* Mostrar menú hamburguesa mobile */
+  .navbar__mobile-menu {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--color-black);
+    cursor: pointer;
+  }
+
+  
+
+  /* Logo centrado */
+  .navbar__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar__logo img {
+    width: 93px;
+    height: 24px;
+  }
+
+  /* Icono de login mobile */
+  .navbar__mobile-login {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar__mobile-menu img,
+.navbar__mobile-login img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+.mobile-secondary-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  height: 36px;
+  width: 100%;
+  background-color: var(--color-white);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 96;
+}
+
+.mobile-secondary-nav__link {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.mobile-secondary-nav__link--active {
+  color: var(--color-red);
+}
+
+.mobile-secondary-nav__link--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-red);
+}
+
+/* Scores bar mobile */
+.scores-bar {
+  width: 100%;
+  margin-left: 0;
+}
+
+.score-card {
+  width: 175px;
+  height: 117px;
+  padding: 8px 15px;
+  padding-bottom: 35px;
+  gap: 8px;
+}
+
+.score-card--tenis {
+  width: 181px; /* en mobile probablemente no haya espacio extra para tenis, ajustamos igual */
+}
+
+.score-card__live {
+  font-size: 10px;
+  padding: 4px 6px;
+}
+
+.score-card__time {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.score-card__when {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.score-card__name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.score-card__score {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.score-card__team img {
+  width: 21px;
+  height: 21px;
+}
+
+.score-card__team {
+  gap: 4px;
+}
+
+.score-card__league {
+  height: 27px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.scores-track {
+  gap: 8px;
+}
+/* Hero mobile: solo imagen, sin texto/botón */
+.hero {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.hero__img {
+  width: 368px;
+  height: 207px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero__content {
+  display: none;
+}
+
+.hero__dots {
+  bottom: 8px;
+}
+
+/* Resúmenes + Titulares mobile (Tendencias oculto, sin diseñar aún) */
+.content-section {
+  width: 100%;
+  margin-left: 0;
+  flex-direction: column;
+  gap: 0;
+}
+
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+}
+
+.tendencias-col {
+  display: none;
+}
+
+.resumenes-col {
+  order: 1;
+}
+
+.titulares-col {
+  order: 2;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.section-title--36 {
+  font-size: 24px;
+}
+
+.resumenes-track {
+  gap: 8px;
+}
+
+.resumen-card {
+  width: 181px;
+  height: 247px;
+}
+
+.titulares-list .titular-item:nth-child(n+5) {
+  display: none;
+}
+
+.titular-item img {
+  width: 56px;
+  height: 56px;
+}
+
+.titular-item {
+  gap: 8px;
+}
+
+.titular-item__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.titular-item__time {
+  display: none;
+}
+/* Noticias mobile: todas iguales, una columna, mostrar las primeras 8 */
+.noticias-section {
+  width: 100%;
+  margin-left: 0;
+}
+
+.noticias-row {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.news-card {
+  width: 100%;
+  max-width: 370px;
+  height: 228px;
+}
+
+.news-card--v2,
+.news-card--v3 {
+  width: 100%;
+  max-width: 370px;
+  height: 228px;
+}
+
+.news-card__overlay,
+.news-card__overlay--v2,
+.news-card__overlay--v3 {
+  width: 100%;
+  padding: 0 8px 16px 8px;
+  gap: 6px;
+}
+
+.news-card__title,
+.news-card__title--v2 {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-line-clamp: 2;
+}
+
+.news-card__league,
+.news-card__league--v2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #CCCCCC;
+}
+
+.news-card__tag {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 8px;
+}
+
+/* Ocultar la 9na noticia en adelante (mostrar solo 8) */
+.noticias-section .news-card:nth-of-type(n+9) {
+  display: none;
+}
+
+/* Carrusel de logos mobile (Competencias, reutilizable) */
+.logo-carousel-section {
+  width: 100%;
+  margin-left: 0;
+}
+
+.logo-carousel__track {
+  gap: 8px;
+}
+
+.logo-carousel__item {
+  width: 106px;
+  height: 106px;
+}
+/* Carrusel de noticias mobile (reutilizable: MLS, grupos por deporte) */
+.news-carousel-section {
+  width: 100%;
+  margin-left: 0;
+}
+
+.news-carousel__track {
+  gap: 8px;
+}
+
+.news-carousel__item {
+  width: 275px;
+}
+
+.news-carousel__item img {
+  width: 275px;
+  height: 159px;
+}
+
+.news-carousel__text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Footer mobile */
+.footer {
+  width: 100%;
+  margin-left: 0;
+  padding: 24px 16px;
+}
+
+.footer__logo {
+  width: 80px;
+  height: auto;
+}
+
+.footer__text {
+  font-size: 12px;
+}
+.scores-bar,
+.content-section,
+.noticias-section,
+.logo-carousel-section,
+.news-carousel-section,
+.footer {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+}
+
