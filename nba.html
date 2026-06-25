@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - NBA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link">En vivo</a>
+        <a href="calendario.html" class="navbar__link">Calendario</a>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sport-navbar">
+    <div class="sport-navbar__sport">
+      <img src="assets/menu/nba.png" alt="" width="36" height="36">
+      <span>NBA</span>
+    </div>
+    <div class="sport-navbar__links">
+      <a href="nba.html" class="sport-navbar__link sport-navbar__link--active">Portada</a>
+      <a href="nba-resultados.html" class="sport-navbar__link">Resultados</a>
+      <a href="nba-calendario.html" class="sport-navbar__link">Calendario</a>
+      <a href="nba-posiciones.html" class="sport-navbar__link">Posiciones</a>
+      <a href="nba-equipos.html" class="sport-navbar__link">Equipos</a>
+      <a href="nba-estadisticas.html" class="sport-navbar__link">Estadísticas</a>
+    </div>
+  </nav>
+
+  <main class="sport-page">
+
+    <div class="scores-bar scores-bar--sport">
+      <div class="scores-track">
+
+        <a href="#" class="score-card">
+          <div class="score-card__header">
+            <span class="score-card__live">EN VIVO</span>
+            <span class="score-card__time">9' C2</span>
+          </div>
+          <div class="score-card__teams">
+            <div class="score-card__team">
+              <img src="assets/escudos/pistons.png" alt="Pistons" width="24" height="24">
+              <span class="score-card__name">Pistons</span>
+              <span class="score-card__score">103</span>
+            </div>
+            <div class="score-card__team">
+              <img src="assets/escudos/cavaliers.png" alt="Cavaliers" width="24" height="24">
+              <span class="score-card__name">Cavaliers</span>
+              <span class="score-card__score">109</span>
+            </div>
+          </div>
+          <span class="score-card__league" style="background-color: var(--color-nba);">NBA</span>
+        </a>
+
+      </div>
+    </div>
+
+    <section class="vs-hero">
+      <h2 class="section-title">NBA</h2>
+      <img src="assets/nba/hero-nba.png" alt="NBA" class="vs-hero__img">
+    </section>
+
+    <section class="resumen-section">
+      <h2 class="section-title">Resumen</h2>
+      <div class="resumen-hero">
+        <div class="resumen-hero__track" id="resumenHeroTrack">
+          <div class="resumen-hero__slide">
+            <img src="assets/nba/resumen1.png" alt="Resumen NBA" class="resumen-hero__img">
+          </div>
+        </div>
+        <div class="resumen-hero__dots" id="resumenHeroDots">
+          <button class="hero__dot hero__dot--active"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-carousel-section logo-carousel-section--sport">
+      <h2 class="section-title">Equipos</h2>
+      <div class="logo-carousel">
+        <div class="logo-carousel__track">
+          <a href="#" class="logo-carousel__item">
+            <img src="assets/nba/equipo1.png" alt="Spurs">
+          </a>
+          <a href="#" class="logo-carousel__item">
+            <img src="assets/nba/equipo2.png" alt="Knicks">
+          </a>
+          <a href="#" class="logo-carousel__item">
+            <img src="assets/nba/equipo3.png" alt="Pistons">
+          </a>
+          <a href="#" class="logo-carousel__item">
+            <img src="assets/nba/equipo4.png" alt="Cavaliers">
+          </a>
+          <a href="#" class="logo-carousel__item">
+            <img src="assets/nba/equipo5.png" alt="Lakers">
+          </a>
+          <a href="#" class="logo-carousel__item">
+            <img src="assets/nba/equipo6.png" alt="Celtics">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias de NBA -->
+    <section class="sport-group">
+      <div class="sport-group__header">
+        <img src="assets/menu/nba.png" alt="" width="45" height="45">
+        <h2 class="section-title">NBA</h2>
+      </div>
+      <div class="news-carousel">
+        <div class="news-carousel__track">
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/nba1.png" alt="">
+            <p class="news-carousel__text">Kevin Durant cerca del retiro luego de los playoffs</p>
+          </a>
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/nba2.png" alt="">
+            <p class="news-carousel__text">New York Knicks campeones de la NBA 2026</p>
+          </a>
+          <a href="#" class="news-carousel__item">
+            <img src="assets/noticias-page/nba3.png" alt="">
+            <p class="news-carousel__text">¿Regresa Lebron luego de una mala temporada en Lakers?</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

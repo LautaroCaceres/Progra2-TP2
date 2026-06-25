@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Argentina - Patriots vs Seahawks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/logo.png" alt="ESPN" width="116" height="30">
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="en-vivo.html" class="navbar__link navbar__link--active">En vivo</a>
+        <a href="calendario.html" class="navbar__link">Calendario</a>
+        <a href="noticias.html" class="navbar__link">Noticias</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__login">Iniciar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="sports-grid" id="sportsGrid">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <button class="sports-toggle" id="sportsToggle" aria-label="Mostrar deportes">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </button>
+
+  <div class="sports-grid sports-grid--floating" id="sportsGridFloating">
+    <div class="sports-grid__row">
+      <a href="futbol.html" class="sports-grid__item"><img src="assets/menu/futbol.png" alt="" width="36" height="36"><span>Futbol</span></a>
+      <a href="hockey.html" class="sports-grid__item"><img src="assets/menu/hockey.png" alt="" width="36" height="36"><span>Hockey</span></a>
+      <a href="formula1.html" class="sports-grid__item"><img src="assets/menu/formula1.png" alt="" width="36" height="36"><span>Formula1</span></a>
+      <a href="boxeo.html" class="sports-grid__item"><img src="assets/menu/boxeo.png" alt="" width="36" height="36"><span>Boxeo</span></a>
+      <a href="ciclismo.html" class="sports-grid__item"><img src="assets/menu/ciclismo.png" alt="" width="36" height="36"><span>Ciclismo</span></a>
+      <a href="nfl.html" class="sports-grid__item"><img src="assets/menu/nfl.png" alt="" width="36" height="36"><span>NFL</span></a>
+      <a href="mlb.html" class="sports-grid__item"><img src="assets/menu/mlb.png" alt="" width="36" height="36"><span>MLB</span></a>
+      <a href="run.html" class="sports-grid__item"><img src="assets/menu/run.png" alt="" width="36" height="36"><span>RUN</span></a>
+    </div>
+    <div class="sports-grid__row">
+      <a href="rugby.html" class="sports-grid__item"><img src="assets/menu/rugby.png" alt="" width="36" height="36"><span>Rugby</span></a>
+      <a href="nba.html" class="sports-grid__item"><img src="assets/menu/nba.png" alt="" width="36" height="36"><span>NBA</span></a>
+      <a href="motogp.html" class="sports-grid__item"><img src="assets/menu/motogp.png" alt="" width="36" height="36"><span>MotoGP</span></a>
+      <a href="tenis.html" class="sports-grid__item"><img src="assets/menu/tenis.png" alt="" width="36" height="36"><span>Tenis</span></a>
+      <a href="polo.html" class="sports-grid__item"><img src="assets/menu/polo.png" alt="" width="36" height="36"><span>Polo</span></a>
+      <a href="golf.html" class="sports-grid__item"><img src="assets/menu/golf.png" alt="" width="36" height="36"><span>Golf</span></a>
+      <a href="mma.html" class="sports-grid__item"><img src="assets/menu/mma.png" alt="" width="36" height="36"><span>MMA</span></a>
+      <div class="sports-grid__item sports-grid__item--empty"></div>
+    </div>
+  </div>
+
+  <main class="match-page">
+
+    <section class="vs-hero">
+      <img src="assets/minuto-a-minuto/patriots-vs-seahawks.png" alt="Patriots vs Seahawks" class="vs-hero__img">
+    </section>
+
+    <div class="match-header">
+      <h2 class="match-header__title">Patriots vs Seahawks</h2>
+      <p class="match-header__instance">Primer Cuarto</p>
+    </div>
+
+    <div class="match-plays">
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Gol de Campo</p>
+          <p class="match-play__time">11:58 - 1°</p>
+          <p class="match-play__desc">J.Myers gol de campo de 33 yarda es ANOTADO, Centro-C.Stoll, Holder-M.Dickson.</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Pase Incompleto</p>
+          <p class="match-play__time">12:06 - 1°</p>
+          <p class="match-play__desc">(Posición Escopeta) S.Darnold pase incompleto corto a la izquierda hasta R.Shaheed.</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Carrera de 3 yardas</p>
+          <p class="match-play__time">12:51 - 1°</p>
+          <p class="match-play__desc">K.Walker derecha tackleada hasta NE 14 para 3 yardas (A.Jennings).</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Pase Incompleto</p>
+          <p class="match-play__time">12:58 - 1°</p>
+          <p class="match-play__desc">(Ofensiva rápida sin reunión, Posición Escopeta) S.Darnold pase incompleto deep left.</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Pase de 23 yardas</p>
+          <p class="match-play__time">13:25 - 1°</p>
+          <p class="match-play__desc">(Ofensiva rápida) S.Darnold pase profundo a la izquierda para C.Kupp empujado fuera en la NE 17 para 23 yardas.</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Pase de 15 yardas</p>
+          <p class="match-play__time">13:50 - 1°</p>
+          <p class="match-play__desc">(Posición Escopeta) S.Darnold pase corto a la izquierda hasta A.Barner hasta NE 40 para 15 yardas (C.Woodson).</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Carrera de 0 yardas</p>
+          <p class="match-play__time">14:29 - 1°</p>
+          <p class="match-play__desc">K.Walker derecha tackleada hasta SEA 45 para ninguna yarda (C.Barmore).</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Carrera de 10 yardas</p>
+          <p class="match-play__time">15:00 - 1°</p>
+          <p class="match-play__desc">K.Walker empujado fuera por lado izquierdo SEA 45 para 10 yardas (C.Davis).</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-play">
+        <div class="match-play__info">
+          <p class="match-play__title">Saque inicial</p>
+          <p class="match-play__time">15:00 - 1°</p>
+          <p class="match-play__desc">A.Borregales patada de salida 65 yardas desde NE 35.</p>
+        </div>
+        <div class="match-play__score">
+          <div class="match-play__team">
+            <span class="match-play__number">0</span>
+            <span class="match-play__abbr">NE</span>
+          </div>
+          <div class="match-play__team">
+            <span class="match-play__number">3</span>
+            <span class="match-play__abbr">SEA</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1577,3 +1577,106 @@ body:has(.sport-navbar) {
 .player-match-card__sets span.winner {
   color: var(--color-red);
 }
+
+/* =====================
+   PÁGINA DE DEPORTE: NBA (reutiliza estructura de Tenis)
+   ===================== */
+
+.logo-carousel-section--sport {
+  margin-top: 64px;
+}
+
+.sport-page .logo-carousel-section {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* =====================
+   PÁGINA MINUTO A MINUTO
+   ===================== */
+
+.match-page {
+  width: calc(100% - 512px);
+  margin-left: 256px;
+  margin-top: 24px;
+}
+
+.match-header {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.match-header__title,
+.match-header__instance {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-white);
+}
+
+.match-header__instance {
+  margin-top: 36px;
+}
+
+.match-plays {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.match-play {
+  background-color: #505050;
+  border-radius: 8px;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-play__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 70%;
+}
+
+.match-play__title,
+.match-play__time {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-white);
+}
+
+.match-play__desc {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: #CCCCCC;
+}
+
+.match-play__score {
+  display: flex;
+  gap: 64px;
+}
+
+.match-play__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.match-play__number {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-white);
+}
+
+.match-play__abbr {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-white);
+}
